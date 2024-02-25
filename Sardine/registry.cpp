@@ -99,7 +99,7 @@ namespace SardineRegistry {
 
 		
 		WCHAR DeviceNameW[256];
-		if (DeviceName != NULL)
+		if (DeviceName != NULL && DeviceName[0]!='\0')
 		{
 			size_t converted = 0;
 			int ret = mbstowcs_s(&converted,DeviceNameW,strlen(DeviceName)+1,DeviceName,_TRUNCATE);

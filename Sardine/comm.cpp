@@ -282,7 +282,7 @@ namespace Comm {
 	{
 		LOG(INIT,"Comm::StartComm");
 
-		/*
+		
 		ghCommEvent = CreateEvent( 
 		NULL,               // default security attributes
 		TRUE,               // manual-reset event
@@ -295,9 +295,9 @@ namespace Comm {
 		LOG(ERR,"Comm::StartComm - CreateEvent failed (%d)\n", GetLastError());
 		return false;
 		}
-		*/
+		
 		// do not open arduino by default
-//		int ret = OpenArduino();
+		int ret = OpenArduino();
 
 		CommMainFunc();
 

@@ -23,8 +23,8 @@
 #include "helper.h"
 #include "registry.h"
 
-#include "../private/my_volvo_s80_2002.h"	// comment this and uncomment the line below (see Interceptor section in MANUAL.txt for details)
-//#include "my_volvo_stub.h"
+//#include "../private/my_volvo_s80_2002.h"	// comment this and uncomment the line below (see Interceptor section in MANUAL.txt for details)
+#include "my_volvo_stub.h"
 
 
 #define FILTERS 1
